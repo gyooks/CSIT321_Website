@@ -1,10 +1,16 @@
-import Hero from './components/Hero'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import GWBH from './components/GWBH'
+import Home from './components/Home'
 
 function App() {
   return (
-    <div>
-      <Hero />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<GWBH />} />
+        <Route path="/Home" element={<Home />} />
+      </Routes>
+    </Router>
   )
 }
 

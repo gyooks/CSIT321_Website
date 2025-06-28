@@ -1,14 +1,12 @@
-# Epic Game Landing Page
-
-🎮 A sleek, responsive gaming-themed landing page built with React, Vite, and Tailwind CSS.
-
-## 🚀 Setup
+## Development
 ```bash
 npm install
+npm install framer-motion
+npm install react-router-dom
 npm run dev
 ```
 
-## 📦 Build for Production
+## Production
 ```bash
 npm run build
 ```
