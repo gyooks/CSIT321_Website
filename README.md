@@ -11,5 +11,5 @@ npm run dev
 npm run build
 ```
 
-## 📤 Deploy to GitHub Pages
+## Deploy to GitHub Pages
 Use a plugin like `vite-plugin-gh-pages`, or manually push the `dist/` folder to the `gh-pages` branch.

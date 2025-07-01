@@ -15,7 +15,7 @@ function GWBH() {
         </h1>
 
         <p className="mt-6 text-lg text-white/80 animate-fade-in delay-200">
-          Step into the future of gaming. No gloves. No remotes. Just natural hand gestures, powered by AI.
+          Step into the future of gaming. No gloves. No remotes. Just natural hand gestures, powered by Machine Learning.
         </p>
 
         <div className="mt-10 animate-fade-in delay-500">

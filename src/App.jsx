@@ -1,17 +1,30 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import GWBH from './components/GWBH';
+import Home from './components/Home';
+import Navbar from './components/Navbar';
 
-import GWBH from './components/GWBH'
-import Home from './components/Home'
+function AppContent() {
+  const location = useLocation();
+  const hideNavbarRoutes = ['/']; // 👈 use "/" not "GWBH /"
 
-function App() {
   return (
-    <Router>
+    <div className="relative">
+      {/* Only show navbar if not on root */}
+      {!hideNavbarRoutes.includes(location.pathname) && <Navbar />}
       <Routes>
         <Route path="/" element={<GWBH />} />
         <Route path="/Home" element={<Home />} />
       </Routes>
-    </Router>
-  )
+    </div>
+  );
 }
 
-export default App
+function App() {
+  return (
+    <Router>
+      <AppContent />
+    </Router>
+  );
+}
+
+export default App;
