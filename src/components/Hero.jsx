@@ -1,6 +1,14 @@
-import { Link } from 'react-router-dom';
+function Hero() {
+  
+  const scrollToFeatures = () => {
+    document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' });
+  };
 
-function GWBH() {
+  const triggerDownload = () => {
+    // Placeholder: hook to trigger file download
+    alert('Download triggered!');
+  };
+
   return (
     <div className="relative min-h-screen bg-gradient-to-tr from-gray-900 via-black to-gray-800 text-white overflow-hidden flex items-center justify-center px-6">
       
@@ -40,4 +48,4 @@ function GWBH() {
   );
 }
 
-export default GWBH;
+export default Hero;
