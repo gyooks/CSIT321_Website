@@ -5,3 +5,16 @@
 html {
     scroll-behavior: smooth;
 }
+
+.custom-swiper-pagination .swiper-pagination-bullet {
+  background-color: #e879f9;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.custom-swiper-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+  transform: scale(1.2);
+  background-color: #ec4899;
+}
+
