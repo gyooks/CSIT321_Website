@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-const sectionIds = ['top', 'About', 'Features', 'Download'];
+const sectionIds = ['top', 'WhyBuy', 'About', 'Features', 'Download'];
 
 function ScrollSpy() {
   useEffect(() => {

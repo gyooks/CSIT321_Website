@@ -31,7 +31,6 @@ export default function Home() {
         {/* Floating Particles */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute w-80 h-80 bg-pink-500 rounded-full filter blur-3xl opacity-20 animate-ping top-[-50px] left-[-50px]" />
-          {/*<div className="absolute w-96 h-96 bg-purple-500 rounded-full filter blur-2xl opacity-20 animate-pulse bottom-[-80px] right-[-60px]" /> */}
         </div>
 
         {/* Main Content */}
@@ -50,7 +49,7 @@ export default function Home() {
               Control games using real-time hand gestures. No gloves. No remotes. Just pure immersive motion.
             </p>
             <a
-              href="#About"
+              href="#WhyBuy"
               className="inline-block bg-gradient-to-r from-pink-500 to-purple-600 px-6 py-3 text-lg rounded-full shadow-lg hover:scale-105 transition"
             >
               🚀 Try the Demo
@@ -65,7 +64,7 @@ export default function Home() {
             className="lg:w-1/2"
           >
             <video
-              src="/public/assets/loop_video.mp4"
+              src="/assets/loop_video.mp4"
               autoPlay
               loop
               muted
