@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
-
 import About from './About';
 import Features from './Features';
 import Download from './Download';
+import WhyBuy from './WhyBuy';
 import ScrollSpy from './Scroll';
 
 export default function Home() {
@@ -22,7 +22,7 @@ export default function Home() {
   }, [location]);
 
   return (
-    <div className="scroll-smooth bg-gradient-to-tr from-purple-900 via-black to-purple-900 min-h-screen text-white" >
+    <div className="scroll-smooth bg-gradient-to-tr from-purple-900 via-black to-purple-900 min-h-screen text-white">
       {/* 🌟 Hero Section */}
       <section
         id="top"
@@ -76,12 +76,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 🧩 Other Fullscreen Sections Below */}
+      {/* 🧩 Other Fullscreen Sections */}
       <ScrollSpy />
       <About />
       <Features />
+      <WhyBuy />
       <Download />
-      {/*<Talk /> */}
     </div>
   );
 }
