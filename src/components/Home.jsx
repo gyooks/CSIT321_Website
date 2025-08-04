@@ -6,6 +6,7 @@ import Features from './Features';
 import Download from './Download';
 import WhyBuy from './WhyBuy';
 import ScrollSpy from './Scroll';
+import Reviews from './Reviews';
 
 export default function Home() {
   const location = useLocation();
@@ -80,6 +81,7 @@ export default function Home() {
       <About />
       <Features />
       <WhyBuy />
+      <Reviews/>
       <Download />
     </div>
   );

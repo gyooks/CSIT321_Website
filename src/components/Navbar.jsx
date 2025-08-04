@@ -42,8 +42,11 @@ function Navbar() {
           <a href="#Features" className={navLinkClass('Features')}>
             Features
           </a>
-                    <a href="#WhyBuy" className={navLinkClass('WhyBuy')}>
+          <a href="#WhyBuy" className={navLinkClass('WhyBuy')}>
             Why Buy
+          </a>
+          <a href="#Reviews" className={navLinkClass('Reviews')}>
+            Reviews
           </a>
           <a href="#Download" className={navLinkClass('Download')}>
             Download
