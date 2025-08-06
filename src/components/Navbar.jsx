@@ -33,27 +33,27 @@ function Navbar() {
       {/* Glass Nav Bar */}
       <header className="fixed top-0 left-0 w-full px-10 py-6 flex justify-between items-center backdrop-blur-md bg-white/5 border-b border-white/10 z-50">
         <div className="text-2xl font-bold tracking-wide">
-          <a href="/">🖐️ GWBH</a>
+          <a href="/CSIT321_Website/">🖐️ GWBH</a>
         </div>
         <nav className="hidden md:flex space-x-8 text-white/80">
-          <a href="#About" className={navLinkClass('About')}>
+          <a href="/CSIT321_Website/#About" className={navLinkClass('About')}>
             About
           </a>
-          <a href="#Features" className={navLinkClass('Features')}>
+          <a href="/CSIT321_Website/#Features" className={navLinkClass('Features')}>
             Features
           </a>
-          <a href="#WhyBuy" className={navLinkClass('WhyBuy')}>
+          <a href="/CSIT321_Website/#WhyBuy" className={navLinkClass('WhyBuy')}>
             Why Buy
           </a>
-          <a href="#Reviews" className={navLinkClass('Reviews')}>
+          <a href="/CSIT321_Website/#Reviews" className={navLinkClass('Reviews')}>
             Reviews
           </a>
-          <a href="#Download" className={navLinkClass('Download')}>
+          <a href="/CSIT321_Website/#Download" className={navLinkClass('Download')}>
             Download
           </a>
         </nav>
         <a
-          href="#talk"
+          href="/CSIT321_Website/#talk"
           className="bg-white text-purple-700 px-4 py-2 rounded-full font-semibold hover:bg-pink-100 transition"
         >
           Let’s Talk
