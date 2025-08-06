@@ -12,8 +12,8 @@ function AppContent() {
     <div className="relative">
       {!hideNavbarRoutes.includes(location.pathname) && <Navbar />}
       <Routes>
-        <Route path="/" element={<Hero />} />
-        <Route path="/Home" element={<Home />} />
+        <Route path="/CSIT321_Website" element={<Hero />} />
+        <Route path="/CSIT321_Website/Home" element={<Home />} />
       </Routes>
       {!hideNavbarRoutes.includes(location.pathname) && <Footer />}
     </div>
