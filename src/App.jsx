@@ -1,31 +1,26 @@
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Hero from './components/Hero';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 function AppContent() {
-  const location = useLocation();
-  const hideNavbarRoutes = ['/'];
-
   return (
-    <div className="relative">
-      {!hideNavbarRoutes.includes(location.pathname) && <Navbar />}
-      <Routes>
-        <Route path="/" element={<Hero />} />         
-        <Route path="/Home" element={<Home />} />     
-      </Routes>
-      {!hideNavbarRoutes.includes(location.pathname) && <Footer />}
-    </div>
+    <Router basename="/CSIT321_Website">
+      <div className="relative">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/Home" element={<Home />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
 function App() {
-  return (
-    <BrowserRouter basename="/CSIT321_Website">
-      <AppContent />
-    </BrowserRouter>
-  );
+  return <AppContent />;
 }
 
 export default App;
