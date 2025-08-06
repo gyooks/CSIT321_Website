@@ -1,3 +1,5 @@
+import { useNavigate } from 'react-router-dom';
+
 function Hero() {
   
   const scrollToFeatures = () => {
@@ -26,12 +28,12 @@ function Hero() {
           Step into the future of gaming. No gloves. No remotes. Just natural hand gestures, powered by Machine Learning.
         </p>
 
-        <div className="mt-10 animate-fade-in delay-500">
-          <a href="/CSIT321_Website/home" className="inline-block bg-gradient-to-r from-pink-500 to-purple-600 px-8 py-4 rounded-full shadow-lg text-lg font-semibold hover:scale-105 transition">
+        <button
+          onClick={() => navigate('/home')}
+          className="inline-block bg-gradient-to-r from-pink-500 to-purple-600 px-8 py-4 rounded-full shadow-lg text-lg font-semibold hover:scale-105 transition"
+          >
             🕹️ Play Now
-          </a>
-
-        </div>
+        </button>
       </div>
 
       {/* Floating Hand Image / Video */}
