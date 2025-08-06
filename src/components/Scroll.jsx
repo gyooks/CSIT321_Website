@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
 
 const sectionIds = ['top', 'WhyBuy', 'About', 'Features', 'Download'];
 
@@ -17,7 +16,7 @@ function ScrollSpy() {
         }
       },
       {
-        rootMargin: '0px 0px -60% 0px', // triggers when top 40% is visible
+        rootMargin: '0px 0px -60% 0px', 
         threshold: 0.3,
       }
     );
