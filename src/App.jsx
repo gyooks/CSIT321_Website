@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Hero from './components/Hero';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
@@ -21,11 +21,7 @@ function AppContent() {
 }
 
 function App() {
-  return (
-    <Router basename="/CSIT321_Website/">
-      <AppContent />
-    </Router>
-  );
+  return <AppContent />;
 }
 
 export default App;
