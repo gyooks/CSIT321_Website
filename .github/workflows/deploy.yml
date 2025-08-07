@@ -17,7 +17,7 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
@@ -25,11 +25,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build with Vite
+      - name: Build Vite site
         run: npx vite build
 
-      - name: Upload build output
-        uses: actions/upload-pages-artifact@v4
+      - name: Upload built site
+        uses: actions/upload-pages-artifact@v1
         with:
           path: ./dist
 
