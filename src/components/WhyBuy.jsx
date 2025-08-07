@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { FaHandPaper, FaCamera, FaCogs, FaBolt, FaThumbsUp, FaLock } from 'react-icons/fa';
 

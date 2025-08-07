@@ -33,17 +33,17 @@ function Navbar() {
       {/* Glass Nav Bar */}
       <header className="fixed top-0 left-0 w-full px-10 py-6 flex justify-between items-center backdrop-blur-md bg-white/5 border-b border-white/10 z-50">
         <div className="text-2xl font-bold tracking-wide">
-          <a href="/">🖐️ GWBH</a>
+          <a href="#top">🖐️ GWBH</a>
         </div>
         <nav className="hidden md:flex space-x-8 text-white/80">
+          <a href="#WhyBuy" className={navLinkClass('WhyBuy')}>
+            Why Buy
+          </a>
           <a href="#About" className={navLinkClass('About')}>
             About
           </a>
           <a href="#Features" className={navLinkClass('Features')}>
             Features
-          </a>
-          <a href="#WhyBuy" className={navLinkClass('WhyBuy')}>
-            Why Buy
           </a>
           <a href="#Reviews" className={navLinkClass('Reviews')}>
             Reviews

@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { useLocation } from 'react-router-dom';
 import About from './About';
 import Features from './Features';
 import Download from './Download';
@@ -9,18 +8,16 @@ import ScrollSpy from './Scroll';
 import Reviews from './Reviews';
 
 export default function Home() {
-  const location = useLocation();
-
   useEffect(() => {
-    if (location.hash) {
-      const element = document.querySelector(location.hash);
-      if (element) {
-        setTimeout(() => {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }, 100);
-      }
+  if (window.location.hash) {
+    const element = document.querySelector(window.location.hash);
+    if (element) {
+      setTimeout(() => {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
     }
-  }, [location]);
+  }
+}, []);
 
   return (
     <div className="scroll-smooth bg-gradient-to-tr from-purple-900 via-black to-purple-900 min-h-screen text-white">
@@ -56,31 +53,14 @@ export default function Home() {
               🚀 Try the Demo
             </a>
           </motion.div>
-
-          {/* Demo Video */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.3 }}
-            className="lg:w-1/2"
-          >
-            <video
-              src="/assets/loop_video.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="rounded-2xl shadow-2xl w-full max-w-lg mx-auto"
-            />
-          </motion.div>
         </div>
       </section>
 
       {/* 🧩 Other Fullscreen Sections */}
       <ScrollSpy />
+      <WhyBuy />
       <About />
       <Features />
-      <WhyBuy />
       <Reviews/>
       <Download />
     </div>

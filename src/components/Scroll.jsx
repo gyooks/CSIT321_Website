@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+
 
 const sectionIds = ['top', 'WhyBuy', 'About', 'Features', 'Download'];
 
