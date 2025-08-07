@@ -27,8 +27,8 @@
   "description": "```bash\r npm install\r npm install framer-motion\r npm install react-router-dom\r npm run dev\r ```",
   "main": "postcss.config.js",
   "repository": {
-    "type": "git",
-    "url": "git+https://gyooks.github.io/CSIT321_Website/.git"
+  "type": "git",
+  "url": "https://github.com/gyooks/CSIT321_Website.git"
   },
   "keywords": [],
   "author": "",
