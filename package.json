@@ -28,13 +28,13 @@
   "main": "postcss.config.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gyooks/CSIT321_Website.git"
+    "url": "git+https://gyooks.github.io/CSIT321_Website/.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gyooks/CSIT321_Website/issues"
+    "url": "https://gyooks.github.io/CSIT321_Website/issues"
   },
-  "homepage": "https://github.com/gyooks/CSIT321_Website/"
+  "homepage": "https://gyooks.github.io/CSIT321_Website/"
 }
