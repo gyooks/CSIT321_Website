@@ -1,45 +1,20 @@
-name: Deploy to GitHub Pages
+name: Deploy Vite site to GitHub Pages
 
 on:
   push:
-    branches:
-      - main
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+    branches: [ main ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout source
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: 18
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build Vite site
-        run: npx vite build
-
-      - name: Upload built site
-        uses: actions/upload-pages-artifact@v1
+      - run: npm ci
+      - run: npm run build
+      - uses: peaceiris/actions-gh-pages@v3
         with:
-          path: ./dist
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
