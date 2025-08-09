@@ -10,9 +10,6 @@ function App() {
     <div className="relative">
       <Home />
       <Navbar />
-      <About />
-      <Features />
-      <Download />
       <Footer />
     </div>
   );
