@@ -5,7 +5,7 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['WhyBuy', 'About', 'Features', 'Download'];
+      const sections = ['WhyBuy', 'About', 'Features', 'Reviews', 'Download', 'DevLog'];
 
       for (let i = 0; i < sections.length; i++) {
         const sec = document.getElementById(sections[i]);
@@ -50,6 +50,9 @@ function Navbar() {
           </a>
           <a href="#Download" className={navLinkClass('Download')}>
             Download
+          </a>
+          <a href="#DevLog" className={navLinkClass('DevLog')}>
+            Dev Log
           </a>
         </nav>
         <a

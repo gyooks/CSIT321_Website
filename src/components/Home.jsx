@@ -6,6 +6,7 @@ import Download from './Download';
 import WhyBuy from './WhyBuy';
 import ScrollSpy from './Scroll';
 import Reviews from './Reviews';
+import DevLog from './DevLog';
 
 export default function Home() {
   useEffect(() => {
@@ -63,6 +64,7 @@ export default function Home() {
       <Features />
       <Reviews/>
       <Download />
+      <DevLog />
     </div>
   );
 }

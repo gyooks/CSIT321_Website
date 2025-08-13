@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 
-
-const sectionIds = ['top', 'WhyBuy', 'About', 'Features', 'Download'];
+const sectionIds = ['top', 'WhyBuy', 'About', 'Features', 'Reviews', 'Download', 'DevLog'];
 
 function ScrollSpy() {
   useEffect(() => {
