@@ -67,7 +67,7 @@ export default function Home() {
               controls
               playsInline
             >
-              <source src="/public/assets/promo video.mov" type="video/mp4" />
+              <source src="/assets/promoVideo.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </motion.div>
