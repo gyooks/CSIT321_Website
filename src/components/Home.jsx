@@ -53,6 +53,23 @@ export default function Home() {
             >
               🚀 Try the Demo
             </a>
+      
+          </motion.div>
+           {/* Video */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="lg:w-1/2 flex justify-center"
+          >
+            <video
+              className="rounded-xl shadow-2xl w-full max-w-md"
+              controls
+              playsInline
+            >
+              <source src="/public/assets/promo video.mov" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </motion.div>
         </div>
       </section>
