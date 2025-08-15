@@ -11,32 +11,32 @@ import 'swiper/css/pagination';
 function Features() {
   const features = [
     {
-      image: '/img1.jpg',
+      image: 'assets/Output.png',
       title: 'Hand Tracking',
       desc: 'Control games using your hands.',
     },
     {
-      image: '/img2.jpg',
+      image: 'assets/no-controller.jpg',
       title: 'No Controllers',
       desc: 'No gloves or remotes needed.',
     },
     {
-      image: '/img3.jpg',
+      image: 'assets/handtrack.png',
       title: 'Immersive Gameplay',
       desc: 'Next-level interaction.',
     },
     {
-      image: '/img4.jpg',
+      image: 'assets/image.png',
       title: 'High Accuracy',
       desc: 'Optimized for low-latency motion.',
     },
     {
-      image: '/img5.jpg',
+      image: 'assets/hand.png',
       title: 'Gesture Recognition',
       desc: 'Recognize multiple hand gestures seamlessly.',
     },
     {
-      image: '/img6.jpg',
+      image: 'assets/PNP.jpg',
       title: 'Plug and Play',
       desc: 'Simple setup, no calibration required.',
     },
