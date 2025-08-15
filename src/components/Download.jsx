@@ -22,12 +22,12 @@ function Download() {
           </p>
 
           <a
-            href="/assets/gwbh_demo.zip" // Or use a download handler
-            download
+            href="download.html"
             className="inline-block bg-pink-600 text-white px-6 py-3 rounded-full hover:bg-pink-700 transition shadow-md"
           >
             ⬇️ Download Now
-          </a>
+          </a>  
+
         </motion.div>
       </div>
     </section>
