@@ -56,21 +56,25 @@ export default function Home() {
       
           </motion.div>
            {/* Video */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="lg:w-1/2 flex justify-center"
-          >
-            <video
-              className="rounded-xl shadow-2xl w-full max-w-md"
-              controls
-              playsInline
-            >
-              <source src="/assets/promoVideo.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </motion.div>
+          {/* YouTube Embed */}
+<motion.div
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, delay: 0.2 }}
+  className="lg:w-1/2 flex justify-center"
+>
+  <div className="rounded-xl shadow-2xl w-full max-w-md aspect-video overflow-hidden">
+    <iframe
+      className="w-full h-full"
+      src="https://www.youtube.com/embed/llBsCIWUZvc?si=e6GG4qCJOayDAfZ_"
+      title="YouTube video player"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowFullScreen
+    ></iframe>
+  </div>
+</motion.div>
+
         </div>
       </section>
 
