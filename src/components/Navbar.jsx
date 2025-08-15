@@ -59,12 +59,7 @@ function Navbar() {
             Dev Log
           </a>
         </nav>
-        <a
-          href="#talk"
-          className="bg-white text-purple-700 px-4 py-2 rounded-full font-semibold hover:bg-pink-100 transition"
-        >
-          Let’s Talk
-        </a>
+        <a></a>
       </header>
     </section>
   );

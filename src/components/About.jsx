@@ -1,25 +1,22 @@
 function About() {
   return (
-    <section
-      id="About"
-    >
-      <div className="h-screen px-8 py-16 flex items-center justify-center">
+    <section id="About" className="min-h-screen px-8 py-16 flex items-center justify-center">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-12 w-full max-w-6xl">
         
-        {/* 🎥 Video Section */}
-        <div className="rounded-xl overflow-hidden shadow-lg">
-          <video
-            src="/public/assets/loop_video.mp4" // Replace with your actual video file
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full h-auto"
-          />
+        {/*Video Section */}
+        <div className="rounded-xl overflow-hidden shadow-lg aspect-video w-full lg:w-1/2">
+          <iframe
+            src="https://www.youtube.com/embed/DayAJlynAJ4?si=uwMc54djpOMhVzl"
+            title="YouTube video player"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            allowFullScreen
+            className="w-full h-full"
+          ></iframe>
         </div>
 
-        {/* 📝 Text Description */}
-        <div>
-          <h2 className="text-4xl font-bold mb-4">About</h2>
+        {/*Text Description */}
+        <div className="lg:w-1/2 text-center lg:text-left">
+          <h2 className="text-4xl font-bold mb-4 text-white">About</h2>
           <p className="text-white/80 text-lg leading-relaxed">
             Experience the next level of interaction with GWBH – a gesture-based game control system. 
             No gloves, no remotes – just your hands and a screen. Designed for immersive, controller-free gameplay.

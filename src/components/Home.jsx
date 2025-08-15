@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     <div className="scroll-smooth bg-gradient-to-tr from-purple-900 via-black to-purple-900 min-h-screen text-white">
-      {/* 🌟 Hero Section */}
+      {/* Hero Section */}
       <section
         id="top"
         className="h-screen py-20 px-6 relative overflow-hidden"
@@ -77,7 +77,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 🧩 Other Fullscreen Sections */}
       <ScrollSpy />
       <WhyBuy />
       <About />

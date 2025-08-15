@@ -8,7 +8,7 @@ function Download() {
     >
       <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
 
-        {/* 📝 Text Content */}
+        {/* Text Content */}
         <motion.div
           className="lg:w-1/2"
           initial={{ opacity: 0, x: -40 }}
@@ -29,33 +29,6 @@ function Download() {
             ⬇️ Download Now
           </a>
         </motion.div>
-
-        {/* 🎥 Video Section */}
-        <motion.div
-          className="lg:w-1/2 rounded-xl overflow-hidden shadow-2xl"
-          initial={{ opacity: 0, x: 40 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.7 }}
-        >
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full h-auto rounded-xl"
-            onError={(e) => {
-              e.target.style.display = 'none';
-              const fallback = document.createElement('img');
-              fallback.src = '/assets/loop_fallback.gif';
-              fallback.className = 'w-full h-auto rounded-xl';
-              e.target.parentNode.appendChild(fallback);
-            }}
-          >
-            <source src="/assets/your-video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </motion.div>
-
       </div>
     </section>
   );
