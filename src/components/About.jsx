@@ -6,7 +6,7 @@ function About() {
         {/*Video Section */}
         <div className="rounded-xl overflow-hidden shadow-lg aspect-video w-full lg:w-1/2">
           <iframe
-            src="https://www.youtube.com/embed/DayAJlynAJ4?si=uwMc54djpOMhVzl"
+            src="https://www.youtube.com/embed/J-81qFnmKD8?si=CSSocjI8epK2-0VY  "
             title="YouTube video player"
             allow="autoplay; encrypted-media; picture-in-picture"
             allowFullScreen
