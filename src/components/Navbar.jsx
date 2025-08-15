@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 
 function Navbar() {
@@ -5,7 +6,7 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['WhyBuy', 'About', 'Features', 'Reviews', 'Download', 'DevLog'];
+      const sections = ['WhyBuy', 'About', 'Features', 'Reviews', 'Tutorial', 'Download', 'DevLog'];
 
       for (let i = 0; i < sections.length; i++) {
         const sec = document.getElementById(sections[i]);
@@ -47,6 +48,9 @@ function Navbar() {
           </a>
           <a href="#Reviews" className={navLinkClass('Reviews')}>
             Reviews
+          </a>
+          <a href="#Tutorial" className={navLinkClass('Tutorial')}>
+            Tutorial
           </a>
           <a href="#Download" className={navLinkClass('Download')}>
             Download

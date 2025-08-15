@@ -1,3 +1,4 @@
+
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import About from './About';
@@ -7,18 +8,19 @@ import WhyBuy from './WhyBuy';
 import ScrollSpy from './Scroll';
 import Reviews from './Reviews';
 import DevLog from './DevLog';
+import Tutorial from './Tutorial'; // Add Tutorial import
 
 export default function Home() {
   useEffect(() => {
-  if (window.location.hash) {
-    const element = document.querySelector(window.location.hash);
-    if (element) {
-      setTimeout(() => {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
+    if (window.location.hash) {
+      const element = document.querySelector(window.location.hash);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
     }
-  }
-}, []);
+  }, []);
 
   return (
     <div className="scroll-smooth bg-gradient-to-tr from-purple-900 via-black to-purple-900 min-h-screen text-white">
@@ -53,28 +55,25 @@ export default function Home() {
             >
               🚀 Try the Demo
             </a>
-      
           </motion.div>
-           {/* Video */}
-          {/* YouTube Embed */}
-<motion.div
-  initial={{ opacity: 0, y: 40 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8, delay: 0.2 }}
-  className="lg:w-1/2 flex justify-center"
->
-  <div className="rounded-xl shadow-2xl w-full max-w-md aspect-video overflow-hidden">
-    <iframe
-      className="w-full h-full"
-      src="https://www.youtube.com/embed/llBsCIWUZvc?si=e6GG4qCJOayDAfZ_"
-      title="YouTube video player"
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowFullScreen
-    ></iframe>
-  </div>
-</motion.div>
-
+          {/* Video */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="lg:w-1/2 flex justify-center"
+          >
+            <div className="rounded-xl shadow-2xl w-full max-w-md aspect-video overflow-hidden">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/llBsCIWUZvc?si=e6GG4qCJOayDAfZ_"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </motion.div>
         </div>
       </section>
 
@@ -83,9 +82,16 @@ export default function Home() {
       <WhyBuy />
       <About />
       <Features />
-      <Reviews/>
-      <Download />
-      <DevLog />
+      <Reviews />
+      <section id="Tutorial">
+        <Tutorial />
+      </section>
+      <section id="Download">
+        <Download />
+      </section>
+      <section id="DevLog">
+        <DevLog />
+      </section>
     </div>
   );
 }
