@@ -2,19 +2,19 @@ import { FaStar, FaQuoteLeft } from 'react-icons/fa';
 
 const testimonials = [
   {
-    name: "Alex T.",
+    name: "Brandon",
     quote: "This is insane — I played without a controller for the first time and it worked like magic.",
-    stars: 5,
-  },
-  {
-    name: "Jamie R.",
-    quote: "Super responsive and immersive. Can't wait for more games to support this.",
     stars: 4,
   },
   {
-    name: "Jordan K.",
-    quote: "Finally, something truly futuristic. The gesture tracking feels smooth and intuitive.",
-    stars: 5,
+    name: "Yugin",
+    quote: "Super responsive and immersive. Can't wait for more games to support this.",
+    stars: 3,
+  },
+  {
+    name: "Ryan",
+    quote: "Interesting experience!",
+    stars: 4,
   },
 ];
 
