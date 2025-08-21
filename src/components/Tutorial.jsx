@@ -188,7 +188,7 @@ function Tutorial() {
                 </ul>
               </li>
               <li>
-                <strong>Supported Games</strong>: Gaming with Bare Hands works best with games that support keyboard inputs, such as FPS, racing, or RPG genres.
+                <strong>Supported Games</strong>: Gaming with Bare Hands works best with games that support keyboard inputs such as racing, or simulation genres.
               </li>
             </ul>
           </div>
