@@ -80,12 +80,6 @@ function WhyBuy() {
           viewport={{ once: true }}
           className="mt-12"
         >
-          <a
-            href="#Download"
-            className="inline-block bg-gradient-to-r from-pink-500 to-purple-600 px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:scale-105 transition-transform"
-          >
-            Get Started Now
-          </a>
         </motion.div>
       </div>
     </section>
