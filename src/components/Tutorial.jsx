@@ -18,6 +18,17 @@ function Tutorial() {
             Learn how to set up and use Gaming with Bare Hands to control your games with custom hand gestures. Follow these steps to create presets, define gestures, bind keys, test your webcam, and start playing!
           </p>
 
+          {/* Video Section */}
+          <div className="rounded-xl overflow-hidden shadow-lg aspect-video w-full lg:w-1/2 mx-auto mb-16">
+            <iframe
+              src="https://www.youtube.com/embed/J-81qFnmKD8?si=CSSocjI8epK2-0VY"
+              title="YouTube video player"
+              allow="autoplay; encrypted-media; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+            ></iframe>
+          </div>
+
           {/* Starting Screen Buttons Image */}
           <div className="mb-16 flex justify-center">
             <motion.div

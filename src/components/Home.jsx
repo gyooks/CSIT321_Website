@@ -1,7 +1,6 @@
 
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import About from './About';
 import Features from './Features';
 import Download from './Download';
 import WhyBuy from './WhyBuy';
@@ -49,12 +48,12 @@ export default function Home() {
             <p className="text-lg text-white/90 max-w-lg">
               Control games using real-time hand gestures. No gloves. No remotes. Just pure immersive motion.
             </p>
-            <a
-              href="#WhyBuy"
-              className="inline-block bg-gradient-to-r from-pink-500 to-purple-600 px-6 py-3 text-lg rounded-full shadow-lg hover:scale-105 transition"
-            >
-              🚀 Try the Demo
-            </a>
+          <a
+            href="#Download"
+            className="inline-block bg-gradient-to-r from-pink-500 to-purple-600 px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:scale-105 transition-transform"
+          >
+            Get Started Now
+          </a>
           </motion.div>
           {/* Video */}
           <motion.div
@@ -79,7 +78,6 @@ export default function Home() {
 
       <ScrollSpy />
       <WhyBuy />
-      <About />
       <Features />
       <Reviews />
       <section id="Tutorial">
