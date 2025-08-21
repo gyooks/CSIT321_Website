@@ -59,7 +59,7 @@ function Navbar() {
             Dev Log
           </a>
         </nav>
-        <a></a>
+        <br></br>
       </header>
     </section>
   );
